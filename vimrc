@@ -36,7 +36,7 @@ set si
 set guioptions-=T
 set guioptions-=r
 set background=dark
-set linespace=16
+set linespace=25
 set guifont=Anonymous\ Pro\ for\ Powerline\ 14
 if has('autocmd')
     autocmd bufwritepost .vimrc source $MYVIMRC
@@ -98,6 +98,8 @@ nmap <C-Down> xp`[V`]
 if has('gui_running')
     let g:airline_theme="solarized"
     colorscheme solarized
+    :set guioptions -=m
+    :set guioptions -=T
 endif
 
 function! <SID>StripTrailingWhitespaces()
