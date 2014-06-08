@@ -38,6 +38,10 @@ set guioptions-=r
 set background=dark
 set linespace=25
 set guifont=Anonymous\ Pro\ for\ Powerline\ 14
+
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+
+
 if has('autocmd')
     autocmd bufwritepost .vimrc source $MYVIMRC
     autocmd BufWritePre *.php,*.js,*.css,*.html :call <SID>StripTrailingWhitespaces()
@@ -96,8 +100,8 @@ nmap <C-Up> xkP`[V`]
 nmap <C-Down> xp`[V`]
 
 if has('gui_running')
-    let g:airline_theme="solarized"
-    colorscheme solarized
+    let g:airline_theme="dark"
+    colorscheme vividchalk
     :set guioptions -=m
     :set guioptions -=T
 endif
@@ -118,4 +122,4 @@ set listchars=tab:▸\ ,eol:¬
 "Invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
-
+map <F7> mzgg=G`z<CR>
