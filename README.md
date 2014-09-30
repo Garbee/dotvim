@@ -2,7 +2,7 @@ dotvim
 ======
 Pull the repo with submodules:
 ```
-git clone https://github.com/Garbee/dotvim.git ~/.vim
+git clone --recursive https://github.com/Garbee/dotvim.git ~/.vim
 ```
 Then link the vimrc file to your .vimrc like so.
 ```
