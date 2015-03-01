@@ -1,0 +1,4 @@
+php
+conf
+spdy
+setfile=~/.vim/spell/security.utf-8.add
