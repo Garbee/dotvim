@@ -46,6 +46,7 @@ set linespace=25
 set guifont=Anonymous\ Pro\ for\ Powerline\ 14
 
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd BufRead,BufNewFile /etc/nginx/sites-*/* setfiletype nginx
 
 
 if has('autocmd')
@@ -134,3 +135,4 @@ map <F7> mzgg=G`z<CR>
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set mouse=a
 set spell spelllang=en_us
+set spell spellfile=~/.vim/spell/security.utf-8.add
