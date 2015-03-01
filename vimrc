@@ -123,3 +123,5 @@ set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 map <F7> mzgg=G`z<CR>
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
