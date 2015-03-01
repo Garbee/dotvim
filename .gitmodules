@@ -55,6 +55,3 @@
 [submodule "bundle/nerdtree-tabs"]
 	path = bundle/nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
-[submodule "bundle/local_vimrc"]
-	path = bundle/local_vimrc
-	url = https://github.com/LucHermitte/local_vimrc.git
