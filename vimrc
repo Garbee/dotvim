@@ -133,3 +133,4 @@ map <F7> mzgg=G`z<CR>
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set mouse=a
+set spell spelllang=en_us
