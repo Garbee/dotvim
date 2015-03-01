@@ -2,6 +2,12 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 " turn vi compatibility off
+set tags=./tags;,~/.vimtags
+let g:easytags_events = ['BufReadPost', 'BufWritePost']
+let g:easytags_async = 1
+let g:easytags_dynamic_files =2
+let g:easytags_resolve_links = 1
+let g:easytags_supress_ctags_warning = 1
 set nocompatible
 set showmode
 set nowrap
@@ -87,7 +93,8 @@ imap jj <esc>
 
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 " map nerdtree command to ctrl + b
-nmap <C-b> :NERDTreeToggle<cr>
+nmap <C-b> :NERDTreeTabsToggle<CR>
+nmap <leader>t :TagbarToggle<CR>
 
 highlight Search cterm=underline
 
