@@ -12,3 +12,11 @@ kEDH
 DSS
 AESGCM
 SHA
+plugin
+eslint
+eslintplugin
+Garbee
+devDependencies
+requireindex
+chai
+js
