@@ -1,6 +1,11 @@
 execute pathogen#infect()
-syntax on
+syntax enable
 filetype plugin indent on
+
+" Fish stuff
+autocmd FileType fish compiler fish
+autocmd FileType fish setlocal textwidth=79
+
 " turn vi compatibility off
 set tags=./tags;,~/.vimtags
 let g:easytags_events = ['BufReadPost', 'BufWritePost']
